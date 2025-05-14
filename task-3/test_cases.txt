@@ -1,0 +1,7 @@
+Test Case 1: Accepted string
+Input: 11 (length 2)
+Expected: Accepted: Length is prime.
+
+Test Case 2: Rejected string
+Input: 1111 (length 4)
+Expected: Rejected: Length is NOT prime.
