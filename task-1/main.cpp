@@ -12,7 +12,7 @@ struct DFA {
     set<int> acceptStates;
     map<pair<int, char>, int> transitions; // key: (state, input) => value: next state
 
-    // Transition function
+   
     int move(int state, char symbol) const {
         auto it = transitions.find({state, symbol});
         if (it != transitions.end()) return it->second;
@@ -24,7 +24,7 @@ struct DFA {
     }
 };
 
-// Function to check if two DFAs are equivalent
+
 bool areEquivalent(const DFA& dfa1, const DFA& dfa2, const set<char>& alphabet) {
     queue<pair<int, int>> q;
     set<pair<int, int>> visited;
@@ -54,7 +54,7 @@ bool areEquivalent(const DFA& dfa1, const DFA& dfa2, const set<char>& alphabet) 
         }
     }
 
-    return true; // All reachable pairs matched
+    return true; 
 }
 
 // Function to input a DFA from user
