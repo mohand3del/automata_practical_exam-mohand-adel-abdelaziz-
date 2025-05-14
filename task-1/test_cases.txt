@@ -1,0 +1,10 @@
+Test Case 1: Equivalent DFAs
+Input DFA 1:
+States: 2, Start: 0, Accept: 1
+Transitions: 0 a 1, 0 b 0, 1 a 1, 1 b 1
+Input DFA 2: (Same as DFA 1)
+Expected: The DFAs are equivalent.
+
+Test Case 2: Non-equivalent DFAs
+DFA 1 accepts strings ending with 'a'; DFA 2 ending with 'b'.
+Expected: The DFAs are NOT equivalent.
