@@ -1,0 +1,12 @@
+Test Case 1: Accepted string
+CFG rules:
+S → AB | BC
+A → BA | a
+B → CC | b
+C → AB | a
+String: ba
+Expected: String belongs to the language.
+
+Test Case 2: Rejected string
+String: bb
+Expected: String does NOT belong to the language.
