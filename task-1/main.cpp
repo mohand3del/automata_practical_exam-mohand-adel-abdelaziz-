@@ -39,13 +39,13 @@ bool areEquivalent(const DFA& dfa1, const DFA& dfa2, const set<char>& alphabet) 
         bool accept1 = dfa1.isAccept(state1);
         bool accept2 = dfa2.isAccept(state2);
         if (accept1 != accept2) {
-            return false; // They are distinguishable
+            return false; 
         }
 
         for (char symbol : alphabet) {
             int next1 = dfa1.move(state1, symbol);
             int next2 = dfa2.move(state2, symbol);
-            if (next1 == -1 || next2 == -1) continue; // skip invalid transitions
+            if (next1 == -1 || next2 == -1) continue;
 
             if (visited.count({next1, next2}) == 0) {
                 visited.insert({next1, next2});
